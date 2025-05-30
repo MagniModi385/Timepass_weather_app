@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # get your api key from https://openweathermap.org/api
-API_KEY = os.getenv('WEATHER_API_KEY', 'put you api key here')
+API_KEY = os.getenv('WEATHER_API_KEY', 'apikey')
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 @app.route('/', methods=['GET', 'POST'])
 def index():
